@@ -43,7 +43,7 @@
                         bindings = <
    &trans &bt BT_PRV  &bt BT_NXT  &trans      &trans    &trans         &kp BSPC   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
    &trans &sk LCMD    &sk LALT    &sk LCTRL   &sk LSHFT &bt BT_SEL 4   &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
-   &trans &kp LCMD(Z) &kp LCMD(X) &kp LCMD(C) &trans    &kp LCMD(V)    &trans   &trans   &trans &trans    &trans &trans
+   &trans &kp LG(Z) &kp LG(X) &kp LG(C) &trans    &kp LG(V)    &trans   &trans   &trans &trans    &trans &trans
                                     &trans     &trans       &trans     &trans  &kp RET   &trans
                         >;
                 };
