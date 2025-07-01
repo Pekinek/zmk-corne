@@ -9,6 +9,15 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+      conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        tri_layer {
+            if-layers = <1 2>;     // 1 = LOWER, 2 = RAISE
+            then-layer = <3>;      // 3 = NAV
+        };
+    };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -53,15 +62,4 @@
                         >;
                 };
         };
-};
-
-/ {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        tri_layer {
-            if-layers = <1 2>;     // 1 = LOWER, 2 = RAISE
-            then-layer = <3>;      // 3 = NAV
-        };
-    };
 };
