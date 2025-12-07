@@ -30,7 +30,7 @@
                         bindings = <
    &kp ESC   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SQT  &kp BSPC
    &kp TAB   &kp A &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O    &kp RET
-   &kp LCMD &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp ESC
+   &kp LCMD &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp DEL
                   &kp LALT &kp SPACE &mo 1    &mo 2 &kp RSHFT &kp RCTRL
                         >;
                 };
@@ -41,10 +41,10 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &trans &bt BT_PRV &bt BT_NXT &trans    &trans    &trans      &trans &kp BSPC &kp N8   &kp N9 &kp N0    &kp BSPC
-   &trans &sk LCMD   &sk LALT   &sk LCTRL &sk LSHFT &trans      &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
-   &trans &kp LG(Z)  &kp LG(X)  &kp LG(C) &trans    &kp LG(V)   &trans &trans   &trans   &trans &trans    &trans
-                                    &trans     &trans       &trans     &trans  &kp RET   &trans
+   &trans &bt BT_PRV &bt BT_NXT &kp PSCRN &trans    &trans      &trans &kp BSPC &kp PG_DN &kp PG_UP &trans    &trans
+   &trans &sk LCMD   &sk LALT   &sk LCTRL &sk LSHFT &trans      &trans &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans
+   &trans &kp LG(Z)  &kp LG(X)  &kp LG(C) &trans    &kp LG(V)   &trans &trans   &trans    &trans    &trans    &trans
+                             &trans     &trans       &trans     &trans  &kp RET    &trans
                         >;
                 };
 
@@ -57,7 +57,7 @@
                         bindings = <
    &trans  &kp TILDE &kp LBKT &kp LBRC &kp LPAR &kp CARET   &kp DLLR &kp RPAR  &kp RBRC &kp RBKT &kp RPAR &trans
    &trans &kp MINUS  &kp STAR &kp EQUAL &kp UNDER &kp COLON      &kp HASH &sk RSHFT &sk RCTRL &sk RALT  &sk RCMD  &trans
-   &trans &kp PLUS   &kp EXCL &kp AT  &kp PRCNT  &kp SEMI      &trans &kp PIPE  &kp AMPS &trans &trans &trans
+   &trans &kp PLUS   &kp EXCL &kp AT  &kp PRCNT  &kp SEMI      &kp BSLH &kp PIPE  &kp AMPS &trans &trans &trans
                              &trans &trans   &trans    &trans   &trans    &trans
                         >;
                 };
