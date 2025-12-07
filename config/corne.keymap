@@ -23,10 +23,10 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+// | ESC  |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  '  | BSPC |
+// | TAB  |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  | RET  |
+// | CMD  |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  /  | DEL  |
+//                    | ALT | SPC | LWR |   | RSE | SHFT | CTRL|
                         bindings = <
    &kp ESC   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SQT  &kp BSPC
    &kp TAB   &kp A &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O    &kp RET
@@ -36,10 +36,10 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |      | BTPRV| BTNXT|PSCRN|     |     |   |     | BSPC| PGDN| PGUP|     |      |
+// |      | sCMD | sALT | sCTR| sSFT|     |   |     | LEFT| DOWN|  UP | RGHT|      |
+// |      | ⌘Z   | ⌘X   | ⌘C  |     | ⌘V  |   |     |     |     |     |     |      |
+//                      |     |     |     |   |     | RET |     |
                         bindings = <
    &trans &bt BT_PRV &bt BT_NXT &kp PSCRN &trans    &trans      &trans &kp BSPC &kp PG_DN &kp PG_UP &trans    &trans
    &trans &sk LCMD   &sk LALT   &sk LCTRL &sk LSHFT &trans      &trans &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans
@@ -50,10 +50,10 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |      |  ~  |  [  |  {  |  (  |  ^  |   |  $  |  )  |  }  |  ]  |  )  |      |
+// |      |  -  |  *  |  =  |  _  |  :  |   |  #  | sSFT| sCTR| sALT| sCMD|      |
+// |      |  +  |  !  |  @  |  %  |  ;  |   |  \  |  |  |  &  |     |     |      |
+//                    |     |     |     |   |     |     |     |
                         bindings = <
    &trans  &kp TILDE &kp LBKT &kp LBRC &kp LPAR &kp CARET   &kp DLLR &kp RPAR  &kp RBRC &kp RBKT &kp RPAR &trans
    &trans &kp MINUS  &kp STAR &kp EQUAL &kp UNDER &kp COLON      &kp HASH &sk RSHFT &sk RCTRL &sk RALT  &sk RCMD  &trans
@@ -64,10 +64,10 @@
 
                 num_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |      |  7  |  5  |  3  |  1  |  9  |   |  8  |  0  |  2  |  4  |  6  |      |
+// |      | sCMD| sALT| sCTR| sSFT| F11 |   | F12 | sSFT| sCTR| sALT| sCMD|      |
+// |      |  F7 |  F5 |  F3 |  F1 |  F9 |   |  F8 | F10 |  F2 |  F4 |  F6 |      |
+//                    |     |     |     |   |     |     |     |
                         bindings = <
    &trans &kp N7   &kp N5   &kp N3    &kp N1    &kp N9   &kp N8  &kp N0    &kp N2    &kp N4   &kp N6   &trans
    &trans &sk LCMD &sk LALT &sk LCTRL &sk LSHFT &kp F11  &kp F12 &sk RSHFT &sk RCTRL &sk RALT &sk RCMD &trans
